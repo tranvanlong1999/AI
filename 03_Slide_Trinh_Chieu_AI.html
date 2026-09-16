@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám Phá Trí Tuệ Nhân Tạo (AI) - Slide Bài Giảng Tiểu Học</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', 'Segoe UI', Tahoma, sans-serif; }
+    body { background-color: #1a1a2e; color: #333; overflow: hidden; height: 100vh; display: flex; align-items: center; justify-content: center; }
+    
+    .slide-container { width: 90vw; height: 50.625vw; max-width: 1280px; max-height: 720px; background: #ffffff; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); position: relative; overflow: hidden; }
+    .slide { display: none; width: 100%; height: 100%; padding: 40px; position: absolute; top: 0; left: 0; flex-direction: column; justify-content: space-between; background: linear-gradient(135deg, #e0f7fa 0%, #fff9c4 100%); }
+    .slide.active { display: flex; animation: fadeIn 0.5s ease-in-out; }
+    
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+
+    /* Controls */
+    .controls { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; z-index: 100; background: rgba(0,0,0,0.6); padding: 10px 25px; border-radius: 30px; backdrop-filter: blur(5px); }
+    .btn { background: #ffb74d; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; cursor: pointer; color: #333; transition: all 0.2s; }
+    .btn:hover { background: #ffa726; transform: scale(1.05); }
+    .slide-number { color: white; font-weight: bold; display: flex; align-items: center; }
+
+    /* Slide Content Styles */
+    h1 { font-size: 2.8rem; color: #0288d1; text-align: center; margin-bottom: 10px; text-shadow: 2px 2px 0px #fff; }
+    h2 { font-size: 2.2rem; color: #f57c00; margin-bottom: 20px; text-align: center; }
+    p { font-size: 1.3rem; line-height: 1.6; color: #444; }
+    
+    .img-box { width: 100%; height: 65%; display: flex; justify-content: center; align-items: center; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 75%; }
+    .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-left: 8px solid #0288d1; }
+    .card.orange { border-left-color: #ff9800; }
+    .card.green { border-left-color: #4caf50; }
+    .card.red { border-left-color: #f44336; }
+    .card h3 { font-size: 1.6rem; margin-bottom: 10px; color: #222; }
+    .card ul { margin-left: 20px; font-size: 1.2rem; line-height: 1.8; }
+
+    .poem-box { background: #fff; padding: 30px; border-radius: 20px; border: 4px dashed #ffb74d; text-align: center; font-size: 1.6rem; font-weight: bold; color: #d84315; line-height: 2; margin: 20px auto; width: 80%; }
+  </style>
+</head>
+<body>
+
+  <div class="slide-container">
+    <!-- SLIDE 1: TRANG BÌA -->
+    <div class="slide active">
+      <div class="img-box">
+        <img src="assets/images/slide_1_cover.jpg" alt="Slide 1 Cover">
+      </div>
+      <p style="text-align: center; font-weight: bold; font-size: 1.4rem; color: #0288d1;">
+        🤖 Tiết học Trải nghiệm 45 phút dành cho Học sinh Tiểu học
+      </p>
+    </div>
+
+    <!-- SLIDE 2: CON NGƯỜI VS MÁY TÍNH -->
+    <div class="slide">
+      <h2>⚔️ AI GIỎI HƠN? (CON NGƯỜI VS MÁY TÍNH)</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>💻 MÁY TÍNH VÔ ĐỊCH</h3>
+          <ul>
+            <li>🧮 Tính 10.000 phép tính trong 1 giây.</li>
+            <li>📚 Ghi nhớ 1.000.000 cuốn sách cùng lúc.</li>
+            <li>⚡ Làm việc liên tục không biết mệt mỏi!</li>
+          </ul>
+        </div>
+        <div class="card orange">
+          <h3>❤️ CON NGƯỜI VÔ ĐỊCH</h3>
+          <ul>
+            <li>💖 Biêt ôm an ủi khi bạn thân bị buồn.</li>
+            <li>🎨 Vẽ bức tranh chứa đựng tình yêu thương.</li>
+            <li>🌟 Có ước mơ và sự sáng tạo kỳ diệu!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: AI LÀ GÌ? -->
+    <div class="slide">
+      <h2>🤔 TRÍ TUỆ NHÂN TẠO (AI) LÀ GÌ?</h2>
+      <div class="card green" style="height: 80%; display: flex; flex-direction: column; justify-content: center;">
+        <h3 style="font-size: 2rem; color: #2e7d32; text-align: center; margin-bottom: 20px;">
+          🤖 AI = Máy tính được con người DẠY để biết suy nghĩ và hỗ trợ chúng ta!
+        </h3>
+        <div class="grid-2" style="height: auto; gap: 15px;">
+          <div style="background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 1.2rem;">🗣️ Trò chuyện như người bạn</div>
+          <div style="background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 1.2rem;">🎨 Hỗ trợ vẽ tranh kỳ diệu</div>
+          <div style="background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 1.2rem;">🚗 Xe ô tô tự lái thông minh</div>
+          <div style="background: #e8f5e9; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 1.2rem;">🔍 Nhận diện khuôn mặt & âm thanh</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: BÍ MẬT DỮ LIỆU -->
+    <div class="slide">
+      <div class="img-box">
+        <img src="assets/images/slide_4_data_concept.jpg" alt="Slide 4 Data Concept">
+      </div>
+      <p style="text-align: center; font-weight: bold; font-size: 1.4rem; color: #f57c00;">
+        💡 Học sinh ăn Cơm & Uống Sữa 🥛 ➡️ AI 'ăn Dữ liệu (Data)' để trở nên thông minh!
+      </p>
+    </div>
+
+    <!-- SLIDE 5: TRẢI NGHIỆM TƯƠNG TÁC -->
+    <div class="slide">
+      <h2>🎮 CÙNG CHƠI VỚI AI NÀO!</h2>
+      <div class="grid-2">
+        <div class="card green">
+          <h3>✍️ Trò chơi 1: BÉ VẼ - AI ĐOÁN</h3>
+          <p style="font-size: 1.2rem; margin-top: 10px;">Website: <strong>Quick, Draw!</strong></p>
+          <p style="font-size: 1.1rem; color: #666; margin-top: 10px;">Bé vẽ hình đơn giản trong 20 giây, AI sẽ đoán tên hình vẽ ngay lập tức!</p>
+        </div>
+        <div class="card orange">
+          <h3>📖 Trò chơi 2: SÁNG TÁC TRUYỆN CỔ TÍCH</h3>
+          <p style="font-size: 1.2rem; margin-top: 10px;">Công cụ: <strong>Trợ lý ChatGPT</strong></p>
+          <p style="font-size: 1.1rem; color: #666; margin-top: 10px;">Bé đưa ý tưởng nhân vật kỳ diệu, AI sẽ biến thành câu chuyện cổ tích 4 câu!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: 3 QUY TẮC VÀNG -->
+    <div class="slide">
+      <h2>🛡️ 3 QUY TẮC VÀNG BẢO VỆ BÉ</h2>
+      <div style="display: flex; flex-direction: column; gap: 15px; height: 75%;">
+        <div class="card red" style="padding: 15px;">
+          <h3>🛑 1. KHÔNG CHIA SẺ BÍ MẬT CÁ NHÂN</h3>
+          <p>Không cho AI biết: Họ tên đầy đủ, địa chỉ nhà, SĐT bố mẹ, mật khẩu!</p>
+        </div>
+        <div class="card orange" style="padding: 15px;">
+          <h3>⚠️ 2. AI CÓ LÚC MƠ NGỦ - KHÔNG TIN 100%</h3>
+          <p>AI cũng có lúc đoán mò và trả lời sai bét. Luôn kiểm tra lại với thầy cô, bố mẹ!</p>
+        </div>
+        <div class="card green" style="padding: 15px;">
+          <h3>💡 3. NẢO BÉ MỚI LA SỐ 1</h3>
+          <p>Tự suy nghĩ trước! AI chỉ là người trợ lý giúp sức chứ không làm hộ bài tập!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: TỔNG KẾT -->
+    <div class="slide">
+      <h2>🏆 CHÚC MƯỜNG CÁC NHÀ KHÁI PHÁ AI NHÍ!</h2>
+      <div class="poem-box">
+        "AI giỏi tính, nhớ siêu nhiều,<br>
+        Nhưng không có trái tim yêu con người.<br>
+        Bé ngoan làm chủ nụ cười,<br>
+        Học chăm, suy nghĩ, điểm 10 tương lai!"
+      </div>
+      <p style="text-align: center; font-size: 1.4rem; font-weight: bold; color: #2e7d32;">
+        🏅 Nhận Huy hiệu Vinh danh & Phiếu làm bài tập về nhà nhé!
+      </p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn" onclick="prevSlide()">◀ Trước</button>
+    <div class="slide-number" id="slideNum">Slide 1 / 7</div>
+    <button class="btn" onclick="nextSlide()">Sau ▶</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideNum = document.getElementById('slideNum');
+
+    function showSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
+      slideNum.textContent = `Slide ${index + 1} / ${slides.length}`;
+    }
+
+    function nextSlide() {
+      if (currentSlide < slides.length - 1) { currentSlide++; showSlide(currentSlide); }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) { currentSlide--; showSlide(currentSlide); }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'Space') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
