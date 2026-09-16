@@ -1,6 +1,6 @@
-# GIÁO ÁN CHI TIẾT: KHÁM PHÁ TRÍ TUỆ NHÂN TẠO (AI)
-**Thời lượng**: 45 phút (1 Tiết học) | **Đối tượng**: Học sinh Tiểu học (Lớp 1 - Lớp 5)  
-**Tác giả**: Giáo viên Tiểu học | **Mục tiêu**: Giúp học sinh hiểu AI là gì, AI hoạt động ra sao và cách sử dụng AI an toàn.
+# GIÁO ÁN ĐỔI MỚI: KHÁM PHÁ TRÍ TUỆ NHÂN TẠO (AI)
+**Thời lượng**: 45 phút (1 Tiết học chuẩn) | **Đối tượng**: Học sinh Tiểu học (Lớp 1 - Lớp 5)  
+**Tác giả**: Giáo viên Tiểu học Giỏi Cấp Quốc Gia | **Tiêu chí**: Siêu trực quan - Hài hước - Dễ hiểu nhất
 
 ---
 
@@ -9,16 +9,16 @@
 ```mermaid
 flowchart TD
     subgraph STAGE1 ["GIAO ĐOẠN 1: CHUẨN BỊ (Trước giờ học)"]
-        A1["📄 In Phiếu hoạt động (A4)"] --> A2["🖥️ Tạo Slide Canva/PPT (03_Slide_Noi_Dung_Goc.md)"]
+        A1["📄 In Phiếu bài tập A4 (04_Phieu_Hoat_Dong_Hoc_Sinh.md)"] --> A2["🖥️ Mở Slide bài giảng (03_Slide_Noi_Dung_Goc.md)"]
         A2 --> A3["🌐 Test Web: QuickDraw + ChatGPT"]
         A3 --> A4["🛡️ Chuẩn bị PA B: Clip/Tranh vẽ (Nếu mất mạng)"]
     end
 
     subgraph STAGE2 ["GIAO ĐOẠN 2: 45 PHÚT TRÊN BỤC GIẢNG (Dạy & Tương tác)"]
-        B1["00-07 phút: KHỞI ĐỘNG\n• Game 'Con Người vs Máy Tính'\n• Động tác Ăng-ten Robot"] --> B2["07-17 phút: BÍ MẬT AI\n• Game nhập vai 'Dạy Robot Chó/Mèo'\n• Hiểu khái niệm Dữ liệu (Data)"]
+        B1["00-07 phút: KHỞI ĐỘNG\n• Game 'Con Người vs Máy Tính'\n• Điệu nhảy 'Ăng-ten Robot & Trái tim'"] --> B2["07-17 phút: BÍ MẬT AI\n• Game 'Dạy Baby Robot Chó/Mèo'\n• Ẩn dụ: Dữ liệu (Data) là 'Cơm & Sữa của AI'"]
         B2 --> B3["17-32 phút: TRẢI NGHIỆM AI\n• Bé vẽ - AI đoán (QuickDraw)\n• Cùng AI sáng tác truyện cổ tích"]
-        B3 --> B4["32-40 phút: AN TOÀN MẠNG\n• Thảo luận 3 Quy tắc vàng\n• Kỹ thuật 'AI cũng có lúc sai'"]
-        B4 --> B5["40-45 phút: TỔNG KẾT\n• Đọc thơ đồng dao AI\n• Cấp Huy hiệu & Phát phiếu bài tập"]
+        B3 --> B4["32-40 phút: AN TOÀN MẠNG\n• 3 Quy tắc vàng bảo vệ bé\n• Kỹ thuật 'Bắt lỗi AI mơ ngủ'"]
+        B4 --> B5["40-45 phút: TỔNG KẾT\n• Đồng thanh đọc bài thơ AI\n• Trao Huy hiệu Nhí & Phát phiếu bài tập"]
     end
 
     subgraph STAGE3 ["GIAO ĐOẠN 3: CỦNG CỦ & ĐÁNH GIÁ (Sau tiết học)"]
@@ -31,35 +31,35 @@ flowchart TD
 
 ---
 
-## I. MỤC TIÊU BÀI HỌC
+## I. MỤC TIÊU BÀI HỌC (NGÔN NGỮ TIỂU HỌC)
 
 ### 1. Kiến thức
-- Học sinh giải thích được khái niệm **AI (Trí tuệ Nhân tạo)** bằng ngôn ngữ đơn giản: *"AI là những phần mềm/máy tính được con người dạy để biết suy nghĩ và học hỏi, giúp đỡ con người làm việc"*.
-- Biết cách phân biệt **Trí tuệ Con người** (cảm xúc, tình yêu thương, sự sáng tạo chân thật) và **Trí tuệ Nhân tạo** (tính toán nhanh, ghi nhớ siêu nhiều, xử lý dữ liệu lớn).
-- Hiểu được nguyên lý AI học tập: **AI học từ Dữ liệu (Data)** (hình ảnh, âm thanh, chữ viết) giống như học sinh học từ sách vở và quan sát thế giới xung quanh.
+- Học sinh giải thích được AI bằng câu nói siêu đơn giản: *"AI giống như một bạn Robot được con người dạy để biết suy nghĩ và giúp đỡ chúng ta!"*.
+- Biết phân biệt rõ ràng: **Con người có Trái tim & Tình yêu thương**, còn **AI có Bộ nhớ siêu khổng lồ & Tốc độ tính toán siêu nhanh**.
+- Hiểu được bí mật: **AI thông minh nhờ ăn "Dữ liệu (Data)"** (Hình ảnh, Âm thanh, Chữ viết) mỗi ngày.
 
 ### 2. Kỹ năng
-- Biết trải nghiệm và tương tác đơn giản với công cụ AI (ví dụ: vẽ hình cho AI đoán, thử nghiệm nhận diện).
-- Biết cách đặt câu hỏi đơn giản hoặc yêu cầu cơ bản cho AI trợ lý.
+- Biết lên bảng tham gia trò chơi vẽ hình cho AI đoán.
+- Biết đưa ra ý tưởng nhân vật để "đặt lệnh" cho AI viết truyện cổ tích.
 
-### 3. Phẩm chất & Đạo đức (An toàn kỹ thuật số)
-- Nhận thức được 3 Quy tắc an toàn: **Không chia sẻ thông tin cá nhân**, **Không tin AI 100% (AI có thể đoán sai)**, và **Coi AI là người trợ lý chứ không làm hộ bài tập hoàn toàn**.
+### 3. An toàn kỹ thuật số
+- Nhớ như in **3 Quy tắc vàng**: *Không cho AI biết bí mật cá nhân*, *Không tin AI 100% vì AI có lúc mơ ngủ*, và *Bộ não của bé mới là số 1!*
 
 ---
 
 ## II. CHUẨN BỊ BÀI GIẢNG
 
 ### 1. Dành cho Giáo viên:
-- Máy tính có kết nối Internet, máy chiếu (Projector) hoặc màn hình TV lớp học.
+- Máy tính kết nối máy chiếu / Màn hình TV.
 - Slide bài giảng (Dựa trên file `03_Slide_Noi_Dung_Goc.md`).
-- Các bộ thẻ bài minh họa (Thẻ tranh con người, thẻ tranh máy tính, thẻ tranh chó/mèo).
-- Đường link sẵn các trang web trải nghiệm AI miễn phí:
-  - [Google Quick, Draw!](https://quickdraw.withgoogle.com/) (AI đoán hình vẽ)
-  - [AutoDraw](https://www.autodraw.com/) (AI biến nét vẽ nguệch ngoạc thành hình đẹp)
+- Bộ thẻ tranh minh họa (Hình con người, robot, chó/mèo).
+- Mở sẵn trình duyệt web:
+  - [Google Quick, Draw!](https://quickdraw.withgoogle.com/)
+  - [ChatGPT / Copilot](https://chatgpt.com/)
 
 ### 2. Dành cho Học sinh:
-- Phiếu hoạt động học sinh (In từ file `04_Phieu_Hoat_Dong_Hoc_Sinh.md`).
-- Bút màu, bút chì.
+- Phiếu bài tập tô màu (In từ file `04_Phieu_Hoat_Dong_Hoc_Sinh.md`).
+- Hộp màu vẽ, bút chì.
 
 ---
 
@@ -70,75 +70,106 @@ flowchart TD
 ### PHẦN 1: KHỞI ĐỘNG & GAME "CON NGƯỜI VS MÁY TÍNH" (7 PHÚT)
 
 #### 🎯 Mục tiêu: 
-Tạo không khí vui vẻ, thu hút sự chú ý và giúp học sinh so sánh khả năng của con người với máy tính thông thường.
+Thu hút 100% sự chú ý, tạo tiếng cười rộn ràng và giúp các em thấy được sự đặc biệt của Trái tim con người.
 
 #### 🎙️ Lời thoại & Hoạt động của Giáo viên:
-- **Giáo viên (nhiệt huyết)**: *"Chào các con! Hôm nay cô/thầy có mang đến lớp một người bạn rất đặc biệt. Nhưng trước khi giới thiệu người bạn này, chúng ta hãy cùng chơi một trò chơi có tên: **Ai Giỏi Hơn? Con Người hay Máy Tính!**"*
-- **Giáo viên nêu luật chơi**: Cô sẽ đưa ra các nhiệm vụ, các con hãy giơ tay chọn xem **Con người** làm tốt hơn hay **Máy tính** làm tốt hơn nhé!
+- **Giáo viên (Hài hước, giọng truyền cảm)**:  
+  *"Chào các nhà khai phá nhí! Hôm nay cô/thầy mang đến lớp mình một người bạn siêu đặc biệt. Người bạn này không ăn cơm, không uống sữa, nhưng lại có một bộ não làm bằng vi mạch kim loại! Trước khi gặp người bạn ấy, chúng ta hãy cùng đấu trí qua trò chơi: **AI GIỎI HƠN? CON NGƯỜI VS MÁY TÍNH!**"*
 
-#### ❓ Các câu hỏi đố vui:
-1. **Câu 1**: *Tính 9.876 x 5.432 trong 1 giây?* ➡️ **Máy tính** 💻
-2. **Câu 2**: *Cảm thấy buồn khi bạn thân bị ốm và ôm bạn một cái?* ➡️ **Con người** ❤️
-3. **Câu 3**: *Nhớ tên của 1 triệu cuốn sách trong thư viện cùng lúc?* ➡️ **Máy tính** 📚
-4. **Câu 4**: *Tự nghĩ ra một câu chuyện cổ tích kỳ diệu xuất phát từ tình thương mẹ?* ➡️ **Con người** 🌟
+#### ❓ 4 Câu hỏi đố vui bùng nổ:
+1. **Câu 1**: *Thực hiện 10.000 phép tính nhân chia trong 1 giây?*  
+   - ➡️ **Cả lớp reo lên**: Máy tính vô địch! 💻
+2. **Câu 2**: *Thấy bạn thân bị ngã đau liền chạy lại ôm bạn và an ủi?*  
+   - ➡️ **Cả lớp reo lên**: Con người vô địch! ❤️ (Máy tính không có trái tim để thương bạn).
+3. **Câu 3**: *Ghi nhớ nội dung của 1 triệu cuốn sách trong thư viện?*  
+   - ➡️ **Cả lớp reo lên**: Máy tính vô địch! 📚
+4. **Câu 4**: *Vẽ một bức tranh thật đẹp xuất phát từ tình yêu dành cho bố mẹ?*  
+   - ➡️ **Cả lớp reo lên**: Con người vô địch! 🎨
 
-#### 💃 Động tác tay phản xạ (1 phút):
-- Hô *"AI Máy tính!"* ➡️ Cả lớp xòe 2 tay trên đầu làm ăng-ten hô *"Tít tít tính nhanh!"*.
-- Hô *"Con người!"* ➡️ Đặt 2 tay lên ngực trái hô *"Yêu thương sáng tạo!"*.
+#### 💃 Động tác tay Ăng-ten Robot (1 phút):
+- **Giáo viên hô**: *"AI Máy tính đâu?"* ➡️ **Học sinh xòe 2 tay lên đầu làm ăng-ten hô**: *"Tít tít tính nhanh!"*
+- **Giáo viên hô**: *"Con người đâu?"* ➡️ **Học sinh ôm 2 tay lên ngực trái hô**: *"Yêu thương sáng tạo!"*
 
 ---
 
-### PHẦN 2: BÍ MẬT ĐẰNG SAU AI - AI HỌC NHƯ THẾ NÀO? (10 PHÚT)
+### PHẦN 2: BÍ MẬT ĐẰNG SAU AI - "CƠM & SỮA CỦA AI LA GÌ?" (10 PHÚT)
 
 #### 🎯 Mục tiêu:
-Giải thích khái niệm **Dữ liệu (Data)** và cách AI học hỏi bằng ví dụ trực quan dễ hiểu.
+Giải thích khái niệm **Dữ liệu (Data)** bằng hình ảnh ẩn dụ *"Thức ăn của Robot"*.
 
-#### 🐾 Trò chơi nhập vai "Dạy Robot":
-- Giáo viên chọn 1 học sinh lên đóng vai **Robot AI mới sinh**.
-- Giáo viên đóng vai **Người dạy (Data Trainer)**, giơ 5 bức ảnh Con Chó và 5 bức ảnh Con Mèo.
-- Hỏi Robot ở bức ảnh thứ 11 ➡️ Robot trả lời đúng ➡️ Cả lớp vỗ tay.
+#### 🐾 Trò chơi nhập vai "Dạy Baby Robot":
+- Giáo viên mời 1 bạn học sinh lên bảng đeo bờm ăng-ten đóng vai **Baby Robot AI** (chưa biết gì).
+- Giáo viên giơ 5 bức ảnh Con Chó và 5 bức ảnh Con Mèo cho Baby Robot xem:
+  - *"Đây là Con Chó: tai dài, mũi to, kêu gâu gâu!"*
+  - *"Đây là Con Mèo: tai nhọn, có ria, kêu meow meow!"*
+- Giáo viên giơ bức ảnh thứ 11 (một con chó hoạt hình mới) và hỏi: *"Baby Robot ơi, đây là con gì?"*
+- Bạn học sinh đóng vai Robot trả lời: *"Con Chó!"* ➡️ **Cả lớp vỗ tay khen ngợi.**
 
-#### 🧠 Rút ra bài học cốt lõi:
-- **Giáo viên**: *"Robot AI không tự nhiên biết mọi thứ. AI thông minh vì nó được xem **RẤT NHIỀU HÌNH ẢNH**. Hàng triệu hình ảnh đó được gọi là **DỮ LIỆU (DATA)**. Dữ liệu chính là **thức ăn bổ dưỡng** của AI!"*
+#### 🧠 Rút ra bài học siêu dễ hiểu:
+- **Giáo viên**:  
+  *"Các con thấy không? Baby Robot không tự nhiên biết con chó hay con mèo. Baby Robot thông minh nhờ được xem **HÀNG TRIỆU BỨC ẢNH**. Hàng triệu bức ảnh đó được gọi là **DỮ LIỆU (DATA)**.  
+  👉 **Học sinh ăn Cơm & Uống Sữa để cao lớn 🥛. Còn AI 'ăn Dữ liệu' để trở nên thông minh!**"*
 
----
-
-### PHẦN 3: TRẢI NGHIỆM THỰC TẾ & TƯƠNG TÁC VỚI AI (15 PHÚT)
-
-#### 🖥️ Hoạt động 1: Trò chơi "Bé vẽ - AI đoán" (8 phút)
-- Sử dụng [Google Quick, Draw!](https://quickdraw.withgoogle.com/) trên máy chiếu.
-- Mời 2 học sinh lên bảng vẽ hình đơn giản trong 20 giây để AI đoán tên.
-
-#### 🎨 Hoạt động 2: Thử nghiệm "Trợ lý AI tạo câu chuyện kỳ diệu" (7 phút)
-- Mở ChatGPT/Copilot trên màn hình lớn.
-- Học sinh đưa ý tưởng nhân vật (Ví dụ: *Một chú thỏ biết bay và cây nấm biết hát*).
-- AI tạo ra câu chuyện ngắn 4 câu trong vài giây. Giáo viên đọc diễn cảm cho cả lớp nghe.
+- **Khấu lệnh phản xạ**:  
+  - Giáo viên hô: *"Thức ăn của AI là gì?"* ➡️ Cả lớp hô to: *"DỮ LIỆU! DỮ LIỆU!"*
 
 ---
 
-### PHẦN 4: THẢO LUẬN & 3 QUY TẮC VÀNG KHI SỬ DỤNG AI (8 PHÚT)
+### PHẦN 3: TRẢI NGHIỆM THỰC TẾ - "BÉ VẼ AI ĐOÁN & SÁNG TÁC TRUYỆN" (15 PHÚT)
 
-#### 🛡️ 3 QUY TẮC VÀNG BẢO VỆ BÉ:
-1. **KHÔNG CHIA SẺ BÍ MẬT CÁ NHÂN**: Không cho AI biết họ tên đầy đủ, địa chỉ nhà, số điện thoại bố mẹ hay mật khẩu.
-2. **KHÔNG TIN AI 100%**: AI đôi khi bị tưởng tượng sai (Ảo giác AI). Luôn cần kiểm tra lại với thầy cô, bố mẹ!
-3. **NÃO BÉ LÀ SỐ 1**: Tự suy nghĩ trước, AI chỉ là người trợ lý giúp sức!
+#### 🖥️ Hoạt động 1: Game "Bé Vẽ - AI Đoán" (8 phút)
+- **Cách chơi**: Giáo viên mở trang web `quickdraw.withgoogle.com` trên máy chiếu.
+- Mời 2 học sinh lên bảng dùng chuột/bút cảm ứng vẽ một vật thể (cái cây, quả táo, ngôi nhà) trong 20 giây.
+- AI sẽ phát âm thanh và đoán tên hình vẽ ngay khi các em đưa nét vẽ đầu tiên.
+- **Giáo viên giải thích**: *"AI đoán đúng vì AI đã được xem hàng triệu bức tranh quả táo do các bạn nhỏ trên toàn thế giới vẽ trước đó rồi đấy!"*
 
-#### ❌ Mẹo thử thách "AI đoán sai" (1 phút):
-- Cố tình cho AI xem hình quả chuối nhưng bảo là điện thoại ➡️ Cho học sinh phát hiện và cười xòa ➡️ Khắc sâu quy tắc không tin AI 100%.
+#### 🎨 Hoạt động 2: "Cùng AI Sáng Tác Truyện Cổ Tích Kỳ Diệu" (7 phút)
+- Giáo viên mở ChatGPT trên màn hình lớn và hỏi cả lớp: *"Các con muốn câu chuyện hôm nay có những nhân vật nào?"*
+- Học sinh giơ tay đề xuất: *"Một chú thỏ biết bay, một cây nấm biết hát và chú đại bàng thích ăn kem!"*
+- Giáo viên gõ câu lệnh vào AI. Sau 3 giây, AI viết ra câu chuyện cổ tích 4 câu cực kỳ vui nhộn.
+- **Giáo viên nhấn mạnh**: *"AI viết rất nhanh, nhưng ý tưởng chú thỏ biết bay là của AI hay của các con?"* ➡️ **Của các con! Bộ não con người luôn là số 1!**
+
+---
+
+### PHẦN 4: THẢO LUẬN AN TOÀN - 3 QUY TẮC VÀNG BẢO VỆ BÉ (8 PHÚT)
+
+#### 🛡️ 3 QUY TẮC VÀNG BẢO VỆ BÉ KHI CHƠI VỚI AI:
+
+```
++-----------------------------------------------------------------------+
+|                       🛡️ 3 QUY TẮC VÀNG BẢO VỆ BÉ                     |
++-----------------------------------------------------------------------+
+| 1. KHÔNG CHIA SẺ BÍ MẬT CÁ NHÂN (🛑 Đèn Đỏ):                         |
+|    - Không cho AI biết: Họ tên đầy đủ, địa chỉ nhà, số điện thoại     |
+|      bố mẹ, hay mật khẩu tài khoản!                                   |
+|                                                                       |
+| 2. AI CÓ LÚC "MƠ NGỦ" - KHÔNG TIN 100% (⚠️ Đèn Vàng):                 |
+|    - Đôi khi AI bị đoán mò hoặc trả lời sai bét. Luôn hỏi lại         |
+|      thầy cô, bố mẹ hoặc kiểm tra sách vở nhé!                        |
+|                                                                       |
+| 3. TỰ NGHĨ TRƯỚC - AI CHỈ LÀ TRỢ LÝ (🟢 Đèn Xanh):                    |
+|    - Không dùng AI làm hộ 100% bài tập về nhà. Não bé mới là          |
+|      "siêu máy tính" tuyệt vời nhất!                                  |
++-----------------------------------------------------------------------+
+```
+
+#### ❌ Mẹo vui "Bắt lỗi AI mơ ngủ" (1 phút):
+- Giáo viên đưa cho AI xem một hình quả chuối nhưng gõ câu hỏi: *"Đây có phải cái điện thoại không?"*
+- AI trả lời nhầm hoặc đoán sai ➡️ Giáo viên reo lên: *"Thấy chưa! AI cũng có lúc mơ ngủ đấy nhé, chúng ta không được tin AI 100% đâu!"*
 
 ---
 
 ### PHẦN 5: TỔNG KẾT & CẤP HUY HIỆU (5 PHÚT)
 
-#### 📜 Đọc đồng dao AI ghi nhớ (1 phút):
+#### 📜 Bài thơ Đồng Dao AI (Cả lớp đọc đồng thanh 1 phút):
 > *"AI giỏi tính, nhớ siêu nhiều,*  
 > *Nhưng không có trái tim yêu con người.*  
 > *Bé ngoan làm chủ nụ cười,*  
 > *Học chăm, suy nghĩ, điểm 10 tương lai!"*
 
-#### 🏅 Trao huy hiệu & Phát phiếu hoạt động (4 phút):
-- Phát phiếu [04_Phieu_Hoat_Dong_Hoc_Sinh.md](file:///d:/DuAnAIHieuChoHocSinh/04_Phieu_Hoat_Dong_Hoc_Sinh.md) dặn các em tô màu Robot ở nhà.
-- Trao danh hiệu giấy: **"NHÀ KHÁI PHÁ AI NHÍ XUẤT SẮC"**.
+#### 🏅 Trao Huy Hiệu & Phát Phiếu Hoạt Động (4 phút):
+- Giáo viên phát phiếu bài tập [04_Phieu_Hoat_Dong_Hoc_Sinh.md](file:///d:/DuAnAIHieuChoHocSinh/04_Phieu_Hoat_Dong_Hoc_Sinh.md) dặn học sinh tô màu Robot ở nhà.
+- Trao danh hiệu giấy cho cả lớp: **"NHÀ KHÁI PHÁ AI NHÍ THÔNG THÁI"**.
 
 ---
 
@@ -147,7 +178,7 @@ Giải thích khái niệm **Dữ liệu (Data)** và cách AI học hỏi bằn
 1. **Website trải nghiệm**:
    - Quick, Draw!: `https://quickdraw.withgoogle.com/`
    - AutoDraw: `https://www.autodraw.com/`
-2. **File đi kèm**:
+2. **File đi kèm trong dự án**:
    - Tiến trình chiến lược: [01_So_Do_Chien_Luoc_Bai_Giang.md](file:///d:/DuAnAIHieuChoHocSinh/01_So_Do_Chien_Luoc_Bai_Giang.md)
    - Nội dung slide: [03_Slide_Noi_Dung_Goc.md](file:///d:/DuAnAIHieuChoHocSinh/03_Slide_Noi_Dung_Goc.md)
    - Phiếu hoạt động: [04_Phieu_Hoat_Dong_Hoc_Sinh.md](file:///d:/DuAnAIHieuChoHocSinh/04_Phieu_Hoat_Dong_Hoc_Sinh.md)

@@ -1,51 +1,49 @@
 # PHIẾU HOẠT ĐỘNG: KHÁM PHÁ TRÍ TUỆ NHÂN TẠO (AI) 🤖
 
-**Họ và tên học sinh**: ..................................................... **Lớp**: ..........  
-**Trường**: ........................................................................................
+**Họ và tên nhà khai phá nhí**: ..................................................... **Lớp**: ..........  
+**Trường**: ...................................................................................................
 
 ---
 
-## 📝 BÀI TẬP 1: AI GIỎI HƠN HAY CON NGƯỜI GIỎI HƠN?
-*(Hãy nối hình vuông bên trái với đáp án đúng ở bên phải nhé!)*
+## 📝 BÀI TẬP 1: THỬ THÁCH "AI GIỎI HƠN?"
+*(Hãy nối hình bên trái với câu trả lời đúng ở bên phải nhé!)*
 
-1. Tính toán 10.000 phép tính siêu nhanh  ➡️  [   ] A. Con người ❤️
-2. Biết yêu thương bạn bè, biết khóc khi buồn ➡️  [   ] B. Máy tính AI 💻
-3. Nhớ được nội dung của 1 triệu cuốn sách ➡️  [   ] C. Con người ❤️
-4. Nghĩ ra ý tưởng vẽ tranh từ tình yêu gia đình ➡️ [   ] D. Máy tính AI 💻
+1. Tính 10.000 phép tính trong 1 giây siêu nhanh  ➡️  [   ] A. Con người ❤️
+2. Biết yêu thương bạn bè và ôm bạn khi buồn  ➡️  [   ] B. Máy tính AI 💻
+3. Nhớ nội dung của 1 triệu cuốn sách             ➡️  [   ] C. Con người ❤️
+4. Vẽ bức tranh thật đẹp xuất phát từ tình yêu mẹ ➡️  [   ] D. Máy tính AI 💻
 
 ---
 
-## 🎨 BÀI TẬP 2: THỬ THÁCH VẼ VÀ DẠY AI
-*(Em hãy vẽ một chú Robot trợ lý mơ ước của em vào khung dưới đây và tô màu thật đẹp nhé!)*
+## 🎨 BÀI TẬP 2: THIẾT KẾ BẠN ROBOT TRỢ LÝ MƠ ƯỚC
+*(Em hãy vẽ chú Robot trợ lý đáng yêu của riêng em và tô màu thật rạng rỡ nhé!)*
 
 ```
 +-----------------------------------------------------------------------+
 |                                                                       |
 |                                                                       |
-|                                                                       |
 |                     [ KHUNG VẼ ROBOT MƠ ƯỚC ]                         |
-|                                                                       |
 |                                                                       |
 |                                                                       |
 +-----------------------------------------------------------------------+
 ```
 
 - **Tên chú Robot của em là**: ...................................................
-- **Việc mà Robot giúp em làm tốt nhất là**: ....................................
+- **Thức ăn Dữ liệu (Data) em muốn cho Robot "ăn" là**: .............................
 
 ---
 
 ## 🛡️ BÀI TẬP 3: THÁM TỬ AN TOÀN - ĐÚNG (Đ) HOẶC SAI (S)?
-*(Hãy đánh dấu **Đ** nếu việc làm đó đúng/an toàn, hoặc **S** nếu việc làm đó sai/nguy hiểm nhé!)*
+*(Đánh dấu **Đ** nếu việc làm đó Đúng/An toàn, hoặc **S** nếu việc làm đó Sai/Nguy hiểm nhé!)*
 
-1. [   ] Chia sẻ số điện thoại và địa chỉ nhà cho AI biết.
-2. [   ] Luôn hỏi lại bố mẹ hoặc thầy cô khi thấy AI trả lời điều kỳ lạ.
-3. [   ] Đặt câu hỏi nhờ AI gợi ý ý tưởng cho bài viết văn.
-4. [   ] Copy 100% câu trả lời của AI làm bài tập về nhà mà không tự đọc lại.
-5. [   ] Giữ bí mật thông tin cá nhân và mật khẩu tài khoản khi dùng máy tính.
+1. [   ] Cho AI biết số điện thoại của bố mẹ và địa chỉ nhà.
+2. [   ] Luôn hỏi lại thầy cô hoặc bố mẹ khi thấy AI trả lời điều kỳ lạ.
+3. [   ] Đặt câu hỏi cho AI để gợi ý ý tưởng hay cho bài tập.
+4. [   ] Copy 100% câu trả lời của AI làm bài về nhà mà không tự nghĩ.
+5. [   ] Giữ bí mật thông tin cá nhân và mật khẩu tài khoản.
 
 ---
 
-## 🌟 HUY HIỆU VINH DANH
-**CHÚC MƯỜNG EM ĐÃ HOÀN THÀNH XUẤT SẮC BÀI HỌC VÀ TRỞ THÀNH:**  
+## 🏆 HUY HIỆU CHỨNG NHẬN
+**CHÚC MƯỜNG EM ĐÃ HOÀN THÀNH TIẾT HỌC XUẤT SẮC VÀ TRỞ THÀNH:**  
 🏅 **"NHÀ KHÁI PHÁ AI NHÍ THÔNG THÁI"** 🏅
