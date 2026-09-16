@@ -8,15 +8,15 @@
 
 ```mermaid
 flowchart TD
-    subgraph STAGE1 ["GIAO ĐOẠN 1: CHUẨN BỊ (Trước giờ học)"]
-        A1["📄 In Phiếu bài tập A4 (04_Phieu_Hoat_Dong_Hoc_Sinh.md)"] --> A2["🖥️ Mở Slide bài giảng (03_Slide_Trinh_Chieu_AI.html)"]
-        A2 --> A3["🌐 Test Web: QuickDraw + ChatGPT"]
+    subgraph STAGE1 ["GIAO ĐOẠN 1: CHUẨN BỊ (Lịch trình 3 ngày chuẩn bị)"]
+        A1["📄 Ngày 1: In Phiếu bài tập A4 & Huy hiệu (04_Phieu_Hoat_Dong_Hoc_Sinh.md)"] --> A2["🖥️ Ngày 2: Mở Slide HTML tương tác (03_Slide_Trinh_Chieu_AI.html)"]
+        A2 --> A3["🌐 Ngày 3: Test Web QuickDraw + ChatGPT"]
         A3 --> A4["🛡️ Chuẩn bị PA B: Clip/Tranh vẽ (Nếu mất mạng)"]
     end
 
     subgraph STAGE2 ["GIAO ĐOẠN 2: 45 PHÚT TRÊN BỤC GIẢNG (Dạy & Tương tác)"]
         B1["00-07 phút: KHỞI ĐỘNG\n• Game 'Con Người vs Máy Tính'\n• Điệu nhảy 'Ăng-ten Robot & Trái tim'"] --> B2["07-17 phút: BÍ MẬT AI\n• Game 'Dạy Baby Robot Chó/Mèo'\n• Ẩn dụ: Dữ liệu (Data) là 'Cơm & Sữa của AI'"]
-        B2 --> B3["17-32 phút: TRẢI NGHIỆM AI\n• Bé vẽ - AI đoán (QuickDraw)\n• Cùng AI sáng tác truyện cổ tích"]
+        B2 --> B3["17-32 phút: TRẢI NGHIỆM AI & NÂNG CAO\n• Bé vẽ - AI đoán (QuickDraw)\n• Cùng AI sáng tác truyện cổ tích\n• 💡 Công thức 3 bước hỏi AI dành cho bé"]
         B3 --> B4["32-40 phút: AN TOÀN MẠNG\n• 3 Quy tắc vàng bảo vệ bé\n• Kỹ thuật 'Bắt lỗi AI mơ ngủ'"]
         B4 --> B5["40-45 phút: TỔNG KẾT\n• Đồng thanh đọc bài thơ AI\n• Trao Huy hiệu Nhí & Phát phiếu bài tập"]
     end
@@ -31,12 +31,13 @@ flowchart TD
 
 ---
 
-## I. MỤC TIÊU BÀI HỌC (CHỦN NĂNG LỰC & PHẨM CHẤT GDPT 2018)
+## I. MỤC TIÊU BÀI HỌC (CHUẨN NĂNG LỰC & PHẨM CHẤT GDPT 2018)
 
 ### 1. Kiến thức
 - Học sinh giải thích được khái niệm AI bằng câu nói đơn giản: *"AI giống như một bạn Robot được con người dạy để biết suy nghĩ và giúp đỡ chúng ta!"*.
 - Phân biệt rõ ràng: **Con người có Trái tim & Tình yêu thương**, còn **AI có Bộ nhớ khổng lồ & Tốc độ tính toán siêu nhanh**.
 - Hiểu nguyên lý cơ bản: **AI thông minh nhờ ăn "Dữ liệu (Data)"** (Hình ảnh, Âm thanh, Chữ viết) mỗi ngày.
+- Nắm được **Công thức 3 bước đặt câu hỏi thông minh cho AI**.
 
 ### 2. Kỹ năng & Năng lực đặc thù
 - **Năng lực Tin học (NLA)**: Trải nghiệm công cụ AI nhận diện hình vẽ và tương tác câu lệnh tạo truyện đơn giản.
@@ -73,7 +74,7 @@ flowchart TD
 Thu hút 100% sự chú ý, tạo tiếng cười rộn ràng và giúp các em thấy được sự đặc biệt của Trái tim con người.
 
 #### 🎙️ Lời thoại & Hoạt động của Giáo viên:
-- **Giáo viên**: *"Chào các nhà khai phá nhí! Hôm nay thầy/cô mang đến lớp mình một người bạn siêu đặc biệt. Người bạn này không ăn cơm, không uống sữa, nhưng lại có một bộ脑 làm bằng vi mạch kim loại! Trước khi gặp người bạn ấy, chúng ta hãy cùng chơi Game trên Slide tương tác: **AI GIỎI HƠN? CON NGƯỜI VS MÁY TÍNH!**"*
+- **Giáo viên**: *"Chào các nhà khai phá nhí! Hôm nay thầy/cô mang đến lớp mình một người bạn siêu đặc biệt. Người bạn này không ăn cơm, không uống sữa, nhưng lại có một bộ não làm bằng vi mạch kim loại! Trước khi gặp người bạn ấy, chúng ta hãy cùng chơi Game trên Slide tương tác: **AI GIỎI HƠN? CON NGƯỜI VS MÁY TÍNH!**"*
 
 #### ❓ 4 Câu hỏi đố vui bùng nổ:
 1. **Câu 1**: *Thực hiện 10.000 phép tính nhân chia trong 1 giây?* ➡️ **Máy tính AI** 💻
@@ -105,14 +106,20 @@ Giải thích khái niệm **Dữ liệu (Data)** bằng hình ảnh ẩn dụ *
 
 ---
 
-### PHẦN 3: TRẢI NGHIỆM THỰC TẾ - "BÉ VẼ AI ĐOÁN & SÁNG TÁC TRUYỆN" (15 PHÚT)
+### PHẦN 3: TRẢI NGHIỆM THỰC TẾ & CÔNG THỨC HỎI AI DÀNH CHO BÉ (15 PHÚT)
 
-#### 🖥️ Hoạt động 1: Game "Bé Vẽ - AI Đoán" (8 phút)
+#### 🖥️ Hoạt động 1: Game "Bé Vẽ - AI Đoán" (6 phút)
 - Mở `quickdraw.withgoogle.com`. Mời 2 học sinh lên bảng vẽ hình đơn giản trong 20 giây để AI phát thanh đoán tên.
 
-#### 🎨 Hoạt động 2: "Cùng AI Sáng Tác Truyện Cổ Tích" (7 phút)
+#### 🎨 Hoạt động 2: "Cùng AI Sáng Tác Truyện Cổ Tích" (5 phút)
 - Mở ChatGPT. Học sinh đưa ý tưởng nhân vật (*Thỏ biết bay, Nấm biết hát*). AI viết câu chuyện 4 câu.
-- **Giáo viên nhấn mạnh**: *"AI viết rất nhanh, nhưng ý tưởng chú thỏ biết bay là của các con! Bộ脑 con người luôn là số 1!"*
+
+#### 💡 Hoạt động 3: BẬT MÍ CÔNG THỨC 3 BƯỚC ĐẶT CÂU HỎI CHO AI (4 phút - NÂNG CAO)
+- **Giáo viên truyền bí kíp**: *"Để AI trả lời đúng ý bé, chúng ta có **CÔNG THỨC 3 BƯỚC** thần kỳ:"*
+  1. **Bước 1**: Nói cho AI biết AI đóng vai gì (*"Bạn là người bạn thân thiện..."*)
+  2. **Bước 2**: Đưa ra yêu cầu rõ ràng (*"...hãy giúp tớ đặt tên cho 1 chú thỏ biết bay!"*)
+  3. **Bước 3**: Thêm yêu cầu vui vẻ (*"...cho tớ 3 cái tên thật đáng yêu nhé!"*)
+- **Dẫn dắt**: *"Nhớ nhé các con, mình nói chuyện rõ ràng thì AI mới trợ giúp mình tốt nhất!"*
 
 ---
 
@@ -165,7 +172,7 @@ Giáo viên có thể in trang này ra khổ giấy A4 bìa cứng, cắt theo h
 +------------------------------------+  +------------------------------------+
 |  🏅 NHÀ KHÁI PHÁ AI NHÍ THÔNG THÁI  |  |  🏅 NHÀ KHÁI PHÁ AI NHÍ THÔNG THÁI  |
 |               🤖 🌟                |  |               🤖 🌟                |
-|      "Bộ não bé là số 1!"          |  |      "Bộ brain bé là số 1!"        |
+|      "Bộ não bé là số 1!"          |  |      "Bộ não bé là số 1!"          |
 |  Em: ............................  |  |  Em: ............................  |
 +------------------------------------+  +------------------------------------+
 ```
