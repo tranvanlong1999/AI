@@ -3,63 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khám Phá Trí Tuệ Nhân Tạo (AI) - Tiết Học Tương Tác Tiểu Học</title>
+  <title>Khám Phá Trí Tuệ Nhân Tạo (AI) - Tiết Học Sôi Nổi Bùng Nổ</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', 'Segoe UI', Tahoma, sans-serif; user-select: none; }
     body { background-color: #0f172a; color: #333; overflow: hidden; height: 100vh; display: flex; align-items: center; justify-content: center; }
     
-    .slide-container { width: 92vw; height: 51.75vw; max-width: 1280px; max-height: 720px; background: #ffffff; border-radius: 24px; box-shadow: 0 25px 50px rgba(0,0,0,0.4); position: relative; overflow: hidden; }
-    .slide { display: none; width: 100%; height: 100%; padding: 35px 45px; position: absolute; top: 0; left: 0; flex-direction: column; justify-content: space-between; background: linear-gradient(135deg, #e0f7fa 0%, #fff9c4 100%); }
+    .slide-container { width: 92vw; height: 51.75vw; max-width: 1280px; max-height: 720px; background: #ffffff; border-radius: 24px; box-shadow: 0 25px 50px rgba(0,0,0,0.5); position: relative; overflow: hidden; }
+    .slide { display: none; width: 100%; height: 100%; padding: 30px 45px; position: absolute; top: 0; left: 0; flex-direction: column; justify-content: space-between; background: linear-gradient(135deg, #e0f7fa 0%, #fff9c4 100%); }
     .slide.active { display: flex; animation: slideIn 0.4s ease-out; }
     
-    @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideIn { from { opacity: 0; transform: translateY(12px) scale(0.99); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+    /* Canvas Confetti Layer */
+    #confettiCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
 
     /* Nav Controls */
-    .controls { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; z-index: 1000; background: rgba(15, 23, 42, 0.85); padding: 10px 25px; border-radius: 30px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); }
-    .btn-nav { background: #f59e0b; border: none; padding: 8px 20px; border-radius: 20px; font-weight: bold; cursor: pointer; color: #fff; font-size: 1rem; transition: all 0.2s; }
+    .controls { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 1000; background: rgba(15, 23, 42, 0.9); padding: 8px 25px; border-radius: 30px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2); }
+    .btn-nav { background: #f59e0b; border: none; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; color: #fff; font-size: 1rem; transition: all 0.2s; }
     .btn-nav:hover { background: #d97706; transform: scale(1.05); }
+    .btn-wheel { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
     .slide-number { color: white; font-weight: bold; display: flex; align-items: center; font-size: 1rem; }
 
     /* Headers */
     h1 { font-size: 2.6rem; color: #0288d1; text-align: center; text-shadow: 2px 2px 0px #fff; }
-    h2 { font-size: 2.1rem; color: #d97706; text-align: center; margin-bottom: 15px; text-shadow: 1px 1px 0px #fff; }
+    h2 { font-size: 2.1rem; color: #d97706; text-align: center; margin-bottom: 12px; text-shadow: 1px 1px 0px #fff; }
 
-    .img-box { width: 100%; height: 65%; display: flex; justify-content: center; align-items: center; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    .img-box { width: 100%; height: 68%; display: flex; justify-content: center; align-items: center; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
     .img-box img { width: 100%; height: 100%; object-fit: cover; }
 
     /* GAME 1 STYLES: CON NGƯỜI VS AI */
-    .game1-quiz { background: white; border-radius: 20px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); height: 78%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
+    .game1-quiz { background: white; border-radius: 20px; padding: 20px 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); height: 80%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; }
     .quiz-question { font-size: 1.8rem; font-weight: bold; color: #1e293b; text-align: center; background: #f1f5f9; padding: 15px 30px; border-radius: 15px; border: 3px dashed #3b82f6; width: 100%; }
     .quiz-options { display: flex; gap: 30px; width: 100%; justify-content: center; }
-    .btn-choice { flex: 1; max-width: 320px; padding: 20px; font-size: 1.5rem; font-weight: bold; border-radius: 20px; border: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+    .btn-choice { flex: 1; max-width: 320px; padding: 18px; font-size: 1.5rem; font-weight: bold; border-radius: 20px; border: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; color: white; box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
     .btn-human { background: linear-gradient(135deg, #ec4899, #ef4444); }
     .btn-ai { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
     .btn-choice:hover { transform: translateY(-4px) scale(1.03); }
     .feedback-msg { font-size: 1.6rem; font-weight: bold; height: 45px; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
 
     /* GAME 2 STYLES: DẠY ROBOT NẠP DỮ LIỆU */
-    .game2-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 78%; }
+    .game2-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 80%; }
     .robot-feeder { background: #fff; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.08); position: relative; border: 4px solid #06b6d4; }
-    .robot-avatar { font-size: 6rem; transition: transform 0.3s; animation: bounce 2s infinite; }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .robot-avatar { font-size: 6.5rem; transition: transform 0.3s; animation: bounce 1.8s infinite; }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
     .data-cards { background: #fff; border-radius: 20px; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); align-content: center; }
     .card-item { background: #f8fafc; border: 3px solid #cbd5e1; border-radius: 15px; padding: 15px; font-size: 1.3rem; font-weight: bold; text-align: center; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; gap: 8px; }
     .card-item:hover { border-color: #3b82f6; background: #eff6ff; transform: scale(1.05); }
     .card-item.fed { opacity: 0.3; pointer-events: none; transform: scale(0.9); }
-    .progress-bar { width: 100%; background: #e2e8f0; height: 20px; border-radius: 10px; overflow: hidden; margin-top: 15px; }
+    .progress-bar { width: 100%; background: #e2e8f0; height: 22px; border-radius: 12px; overflow: hidden; margin-top: 15px; }
     .progress-fill { background: linear-gradient(90deg, #10b981, #06b6d4); height: 100%; width: 0%; transition: width 0.4s; }
 
     /* GAME 3 STYLES: THÁM TỬ BẮT LỖI AI */
-    .game3-container { background: #fff; border-radius: 20px; padding: 25px; height: 78%; display: flex; flex-direction: column; justify-content: space-around; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .game3-container { background: #fff; border-radius: 20px; padding: 25px; height: 80%; display: flex; flex-direction: column; justify-content: space-around; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
     .detective-statement { background: #f8fafc; border: 3px solid #cbd5e1; border-radius: 15px; padding: 15px 25px; font-size: 1.3rem; font-weight: bold; cursor: pointer; transition: all 0.2s; display: flex; justify-content: space-between; align-items: center; }
     .detective-statement:hover { border-color: #f59e0b; background: #fffbeb; }
-    .detective-statement.correct-catch { border-color: #10b981; background: #d1fae5; color: #065f46; }
+    .detective-statement.correct-catch { border-color: #10b981; background: #d1fae5; color: #065f46; animation: pop 0.3s; }
     .detective-statement.wrong-catch { border-color: #ef4444; background: #fee2e2; color: #991b1b; }
 
-    .poem-box { background: #fff; padding: 25px; border-radius: 20px; border: 4px dashed #f59e0b; text-align: center; font-size: 1.6rem; font-weight: bold; color: #c2410c; line-height: 1.9; margin: 10px auto; width: 85%; }
+    /* LUCKY WHEEL POPUP MODAL */
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 5000; align-items: center; justify-content: center; backdrop-filter: blur(5px); }
+    .modal-overlay.active { display: flex; }
+    .modal-box { background: white; border-radius: 25px; padding: 35px; width: 450px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border: 4px solid #f59e0b; animation: pop 0.3s ease-out; }
+    @keyframes pop { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .wheel-title { font-size: 1.8rem; color: #8b5cf6; font-weight: bold; margin-bottom: 15px; }
+    .wheel-result { font-size: 2.2rem; font-weight: bold; color: #ec4899; min-height: 60px; display: flex; align-items: center; justify-content: center; background: #fdf2f8; border-radius: 15px; margin: 15px 0; border: 2px dashed #ec4899; }
+
+    .poem-box { background: #fff; padding: 22px; border-radius: 20px; border: 4px dashed #f59e0b; text-align: center; font-size: 1.6rem; font-weight: bold; color: #c2410c; line-height: 1.8; margin: 10px auto; width: 85%; }
   </style>
 </head>
 <body>
+
+  <canvas id="confettiCanvas"></canvas>
 
   <div class="slide-container">
     <!-- SLIDE 1: TRANG BÌA -->
@@ -68,13 +82,13 @@
         <img src="assets/images/slide_1_cover.jpg" alt="Slide 1 Cover">
       </div>
       <p style="text-align: center; font-weight: bold; font-size: 1.4rem; color: #0288d1;">
-        🤖 Tiết học Tương tác Tích hợp Game dành cho Học sinh Tiểu học
+        🚀 Tiết Học Sôi Nổi Bùng Nổ Tích Hợp Game Tương Tác cho Học Sinh Tiểu Học
       </p>
     </div>
 
     <!-- SLIDE 2: INTERACTIVE GAME 1 - CON NGƯỜI VS AI -->
     <div class="slide">
-      <h2>🎮 GAME 1: CON NGƯỜI VS MÁY TÍNH AI</h2>
+      <h2>⚔️ GAME 1: ĐẤU TRÍ - CON NGƯỜI VS MÁY TÍNH AI</h2>
       <div class="game1-quiz">
         <div class="quiz-question" id="quizQuestion">Bấm nút bên dưới để bắt đầu câu đố!</div>
         <div class="quiz-options">
@@ -88,9 +102,9 @@
     <!-- SLIDE 3: AI LÀ GÌ? -->
     <div class="slide">
       <h2>🤔 TRÍ TUỆ NHÂN TẠO (AI) LÀ GÌ?</h2>
-      <div style="background: white; padding: 25px; border-radius: 20px; height: 78%; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
+      <div style="background: white; padding: 25px; border-radius: 20px; height: 80%; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
         <h3 style="font-size: 1.9rem; color: #059669; text-align: center; margin-bottom: 25px;">
-          🤖 AI = Máy tính được con người DẠY để biết suy nghĩ & trợ giúp chúng ta!
+          🤖 AI = Máy tính được con người DẠY để biết suy nghĩ & hỗ trợ chúng ta!
         </h3>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="background: #ecfdf5; border-left: 6px solid #10b981; padding: 20px; border-radius: 12px; font-weight: bold; font-size: 1.3rem;">🗣️ Trò chuyện như người bạn</div>
@@ -125,11 +139,11 @@
     <!-- SLIDE 5: TRẢI NGHIỆM THỰC TẾ -->
     <div class="slide">
       <h2>🖥️ TRẢI NGHIỆM CÔNG CỤ AI THỰC TẾ</h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 78%;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 80%;">
         <div style="background: white; border-radius: 20px; padding: 25px; border-top: 8px solid #10b981; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
           <h3 style="font-size: 1.6rem; color: #059669;">✍️ Trò chơi: BÉ VẼ - AI ĐOÁN</h3>
           <p style="font-size: 1.2rem; color: #475569; margin-top: 15px;">Website: <strong>Quick, Draw!</strong></p>
-          <p style="font-size: 1.1rem; color: #64748b; margin-top: 10px;">Bé lên bảng vẽ nét hình đơn giản trong 20 giây. AI sẽ phát thanh đoán tên vật thể ngay lập tức!</p>
+          <p style="font-size: 1.1rem; color: #64748b; margin-top: 10px;">Bé lên bảng vẽ nét hình đơn giản trong 20 giây. AI sẽ đoán tên vật thể ngay lập tức!</p>
         </div>
         <div style="background: white; border-radius: 20px; padding: 25px; border-top: 8px solid #f59e0b; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
           <h3 style="font-size: 1.6rem; color: #d97706;">📖 SÁNG TÁC TRUYỆN CỔ TÍCH</h3>
@@ -176,10 +190,21 @@
     </div>
   </div>
 
+  <!-- MODAL BÀN TAY MAY MẮN GỌI TÊN HỌC SINH -->
+  <div class="modal-overlay" id="wheelModal">
+    <div class="modal-box">
+      <div class="wheel-title">🎲 VÒNG QUAY GỌI TÊN NHÀ KHAI PHÁ NHÍ!</div>
+      <div class="wheel-result" id="wheelResult">Bấm nút quay!</div>
+      <button class="btn-nav" style="background: #8b5cf6; width: 100%; font-size: 1.2rem; margin-top: 10px;" onclick="spinWheel()">🎉 Quay Gọi Tên Học Sinh!</button>
+      <button class="btn-nav" style="background: #64748b; margin-top: 10px;" onclick="toggleWheel()">Đóng</button>
+    </div>
+  </div>
+
   <div class="controls">
     <button class="btn-nav" onclick="prevSlide()">◀ Trước</button>
     <div class="slide-number" id="slideNum">Slide 1 / 7</div>
     <button class="btn-nav" onclick="nextSlide()">Sau ▶</button>
+    <button class="btn-nav btn-wheel" onclick="toggleWheel()">🎲 Gọi Tên Học Sinh lên bảng</button>
   </div>
 
   <script>
@@ -197,6 +222,54 @@
         osc.stop(audioCtx.currentTime + duration);
       } catch(e){}
     }
+
+    function playFanfare() {
+      const notes = [523, 659, 783, 1046];
+      notes.forEach((n, idx) => {
+        setTimeout(() => playBeep(n, 0.25), idx * 120);
+      });
+    }
+
+    // Confetti Fireworks Effect
+    const canvas = document.getElementById('confettiCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function launchConfetti() {
+      playFanfare();
+      particles = [];
+      for(let i=0; i<80; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 16,
+          vy: (Math.random() - 0.7) * 16,
+          color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+          radius: Math.random() * 6 + 4,
+          alpha: 1
+        });
+      }
+    }
+
+    function updateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p, idx) => {
+        p.x += p.vx; p.y += p.vy; p.vy += 0.3; p.alpha -= 0.015;
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, p.alpha);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      });
+      particles = particles.filter(p => p.alpha > 0);
+      requestAnimationFrame(updateConfetti);
+    }
+    updateConfetti();
 
     // Slide Navigation
     let currentSlide = 0;
@@ -216,6 +289,26 @@
       if (e.key === 'ArrowLeft') prevSlide();
     });
 
+    // LUCKY WHEEL LOGIC
+    function toggleWheel() {
+      document.getElementById('wheelModal').classList.toggle('active');
+    }
+    const studentSeats = ["Bàn 1 Dãy A 🌟", "Bàn 2 Dãy B 🚀", "Bàn 3 Dãy C 🎨", "Tổ trưởng Tổ 1 ⭐", "Tổ trưởng Tổ 2 🎈", "Nhà Khai Phá Nhí Tổ 3 🏅", "Tổ trưởng Tổ 4 🏆"];
+    function spinWheel() {
+      const res = document.getElementById('wheelResult');
+      res.textContent = "🌀 Đang quay...";
+      let count = 0;
+      const interval = setInterval(() => {
+        playBeep(400 + Math.random()*400, 0.05);
+        res.textContent = studentSeats[Math.floor(Math.random() * studentSeats.length)];
+        count++;
+        if (count > 15) {
+          clearInterval(interval);
+          launchConfetti();
+        }
+      }, 100);
+    }
+
     // GAME 1 LOGIC
     const quizData = [
       { q: "1. Tính 9.876 x 5.432 trong 1 giây?", ans: "AI", reason: "Máy tính AI tính toán siêu nhanh! 💻" },
@@ -229,7 +322,6 @@
       const q = quizData[quizIdx];
       document.getElementById('quizQuestion').textContent = q.q;
       document.getElementById('quizFeedback').textContent = "";
-      document.getElementById('quizFeedback').style.color = "#333";
     }
     loadQuiz();
 
@@ -237,13 +329,13 @@
       const q = quizData[quizIdx];
       const feedback = document.getElementById('quizFeedback');
       if (choice === q.ans) {
-        playBeep(600, 0.3);
+        launchConfetti();
         feedback.textContent = "🎉 ĐÚNG RỒI! " + q.reason;
         feedback.style.color = "#059669";
         setTimeout(() => {
           quizIdx = (quizIdx + 1) % quizData.length;
           loadQuiz();
-        }, 2200);
+        }, 2500);
       } else {
         playBeep(200, 0.4);
         feedback.textContent = "❌ Thử lại nhé! Hãy nghĩ xem ai giỏi việc này hơn?";
@@ -266,7 +358,7 @@
       const speech = document.getElementById('robotSpeech');
       
       if (fedCount === 4) {
-        playBeep(1000, 0.5);
+        launchConfetti();
         face.textContent = "🤩";
         speech.textContent = "🎉 WOA! Tớ đã nạp đủ Dữ liệu và trở nên SIÊU THÔNG MINH rồi!";
         speech.style.color = "#059669";
@@ -280,7 +372,7 @@
     function checkDetective(el, isLie) {
       const icon = el.querySelector('.status-icon');
       if (isLie) {
-        playBeep(700, 0.3);
+        launchConfetti();
         el.className = "detective-statement correct-catch";
         icon.textContent = "🚨 BẮT ĐƯỢC LỖI AI MƠ NGỦ!";
       } else {
